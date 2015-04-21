@@ -1,0 +1,15 @@
+<template name="home">
+  <h3>venues</h3>
+  <ul>
+    {{#each venues}}
+    <li>{{title}}</li>
+    {{/each}}
+  </ul>
+
+  <h3>Games</h3>
+  <ul>
+    {{#each games}}
+      <li><a href="{{pathFor route='game.show'}}">{{title}}</a></li>
+    {{/each}}
+  </ul>
+</template>

@@ -1,0 +1,19 @@
+<template name="newGames">
+<form>
+  <div class="form-group">
+    {{text_field "title"}}
+  </div>
+
+  <div class="form-group">
+    <select name="venueId">
+      {{#each venues}}
+        <option value="{{_id}}">{{title}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div class="form-group">
+    {{submit_button "Add this game"}}
+  </div>
+</form>
+</template>
